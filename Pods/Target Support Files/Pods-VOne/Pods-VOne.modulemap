@@ -1,0 +1,6 @@
+framework module Pods_VOne {
+  umbrella header "Pods-VOne-umbrella.h"
+
+  export *
+  module * { export * }
+}

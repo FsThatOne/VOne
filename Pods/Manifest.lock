@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (3.4.0)
+  - pop (1.0.9)
+  - SnapKit (0.21.0)
+  - YYKit (1.0.5):
+    - YYKit/no-arc (= 1.0.5)
+  - YYKit/no-arc (1.0.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - pop
+  - SnapKit
+  - YYKit
+
+SPEC CHECKSUMS:
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  SnapKit: 2756fe24b706367af224c9c508d2f9166d03354c
+  YYKit: f2654fe525de2283648db957bddb37ddd8e06549
+
+COCOAPODS: 0.39.0
