@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-VOne.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,12 +42,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1D33EBC29F02F1B7E4083FA8729222C8</key>
+		<key>143207C867DF470099999A6C529940EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6011F651ADCDE8C60DDF9F9D20866510</key>
+		<key>39C39373378DA060020B7F3B46CD93D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +57,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>81A2CF4D20CB798D49A7C3C0279C51DD</key>
+		<key>A66A6DCA9C3705EF038F6AE2ED73587A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9B8B9072406424D7E055F229FEE9CCC8</key>
+		<key>DD708AC7B5E7EDE6377E99851E9C591E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E48821D0FFD480A093B12A944C7C0286</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E96E13C4D3B5B5FC0651440734C2BF4D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

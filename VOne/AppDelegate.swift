@@ -12,10 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window!.rootViewController = TestViewController()
+        window!.makeKeyAndVisible()
+        
+        registLeanCloud(launchOptions)
+        
         return true
     }
 
@@ -44,3 +49,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    
+    func registLeanCloud(launchOptions: [NSObject: AnyObject]?) {
+        AVOSCloud.setApplicationId("URn1LKFNWsfbIp4KRgm3eN9O-gzGzoHsz", clientKey: "k5f6AnbBfj0gYWJix8KnTY0K")
+        AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+    }
+    
+}

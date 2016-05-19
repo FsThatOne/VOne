@@ -8,7 +8,12 @@ target 'VOne' do
 pod 'SnapKit'
 pod 'Alamofire'
 pod 'pop'
-pod 'YYKit' 
-
+pod 'YYKit'
+pod 'Kingfisher'
+pod 'SVProgressHUD'
+#pod 'RxSwift'
+#pod 'RxCocoa'
+pod 'AVOSCloud'
+pod 'AVOSCloudIM'
 end
 

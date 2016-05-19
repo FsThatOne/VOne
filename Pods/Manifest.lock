@@ -1,21 +1,36 @@
 PODS:
   - Alamofire (3.4.0)
+  - AVOSCloud (3.2.12)
+  - AVOSCloudIM (3.2.12):
+    - AVOSCloud
+  - Kingfisher (2.4.1)
   - pop (1.0.9)
   - SnapKit (0.21.0)
+  - SVProgressHUD (2.0.3)
   - YYKit (1.0.5):
     - YYKit/no-arc (= 1.0.5)
   - YYKit/no-arc (1.0.5)
 
 DEPENDENCIES:
   - Alamofire
+  - AVOSCloud
+  - AVOSCloudIM
+  - Kingfisher
   - pop
   - SnapKit
+  - SVProgressHUD
   - YYKit
 
 SPEC CHECKSUMS:
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  AVOSCloud: fcbb5c2bcccaddbdea8c2b4f6c1ad7f13e6639fe
+  AVOSCloudIM: 3c9aece07d9f707f1e7846435703ad191505b7fd
+  Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SnapKit: 2756fe24b706367af224c9c508d2f9166d03354c
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   YYKit: f2654fe525de2283648db957bddb37ddd8e06549
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: a05ecc898e9874e5953b32e783b6b609dce24417
+
+COCOAPODS: 1.0.0
