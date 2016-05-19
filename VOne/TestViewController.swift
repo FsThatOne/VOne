@@ -15,6 +15,10 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.whiteColor()
+        let object: AVObject = AVObject(className: "TestObject")
+        object.setObject("wang", forKey: "firstName")
+        object.setObject("zhengyi", forKey: "lastName")
+        object.save()
     }
     
     override func didReceiveMemoryWarning() {
