@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
     
     func registLeanCloud(launchOptions: [NSObject: AnyObject]?) {
-        AVOSCloud.setApplicationId("URn1LKFNWsfbIp4KRgm3eN9O-gzGzoHsz", clientKey: "Oulel5HOiIjJHbGgpg97623D")
+        AVOSCloud.setApplicationId("URn1LKFNWsfbIp4KRgm3eN9O-gzGzoHsz", clientKey: "k5f6AnbBfj0gYWJix8KnTY0K")
         AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
     }
     
