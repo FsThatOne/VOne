@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (3.4.0)
+  - FSLogger (0.1.0)
   - Kingfisher (2.4.1)
   - RxCocoa (2.5.0):
     - RxSwift (~> 2.5)
@@ -12,6 +13,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - FSLogger
   - Kingfisher
   - RxCocoa
   - RxSwift
@@ -21,6 +23,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  FSLogger: af315c72accbf9e5182eabc325668515a388800b
   Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
   RxCocoa: e1b1562e57a554d0fb2aabf9d71b637f177257c7
   RxSwift: 402b41a50e922a0368fc14cb3bc9f4427920e8ae
@@ -28,6 +31,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   YYKit: f2654fe525de2283648db957bddb37ddd8e06549
 
-PODFILE CHECKSUM: c74319d6589c97621ff7ccfe2e27e96b073e7aad
+PODFILE CHECKSUM: 9b2e4e25de05ea07351b12aa4eb9a833e94300b2
 
 COCOAPODS: 1.0.0

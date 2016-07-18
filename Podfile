@@ -12,6 +12,7 @@ pod 'Kingfisher'
 pod 'SVProgressHUD'
 pod 'RxSwift'
 pod 'RxCocoa'
+pod 'FSLogger'
 
 end
 

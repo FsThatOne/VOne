@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B664EF40F97B61918D105735E29C82C3'
-               BlueprintName = 'RxCocoa'
+               BlueprintIdentifier = '623455B776CF8E8504935F1BBFEED352'
+               BlueprintName = 'FSLogger'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'RxCocoa.framework'>
+               BuildableName = 'FSLogger.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

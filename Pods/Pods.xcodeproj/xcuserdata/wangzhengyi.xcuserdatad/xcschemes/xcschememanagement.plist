@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FSLogger.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,17 +52,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>17A2D20BC29D8CDB8C8CD1932B5D88BE</key>
+		<key>570DF7D45840021A54C0583B84912113</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3BF699F95889F095FF3F2A208FC98DF1</key>
+		<key>623455B776CF8E8504935F1BBFEED352</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6D624F4F4B94748F33C6E22E26C1E956</key>
+		<key>76440876E2099FBBD1D81AB1E15A89A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,22 +72,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A335385466154D57173AFBC44F2C2749</key>
+		<key>7DC0DD9E159FE58029D49D42165940E2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CD438589DEA60231C17C8B9F23DA02F5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DEF0B3D5329E716C1443314E25683F6B</key>
+		<key>B664EF40F97B61918D105735E29C82C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E96E13C4D3B5B5FC0651440734C2BF4D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB0BD95B02B66ABADCEABD7EB265ACFB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF3B2CCA42CAF78602B562E928E72DE5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
