@@ -15,16 +15,6 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.whiteColor()
-        let object: AVObject = AVObject(className: "ToDo")
-        object.setObject("wang", forKey: "firstName")
-        object.setObject("zhengyi", forKey: "lastName")
-        object.saveInBackgroundWithBlock { (yesOrNo, error) in
-            if yesOrNo {
-                print("success")
-            } else {
-                print("fail")
-            }
-        }
     }
     
     override func didReceiveMemoryWarning() {

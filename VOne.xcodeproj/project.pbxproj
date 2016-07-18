@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		2984149B5E721C407EB266B4 /* Pods-VOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VOne/Pods-VOne.debug.xcconfig"; sourceTree = "<group>"; };
 		625BBFFB24247070C3FD70DD /* Pods_VOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		76BFE2391CEB0E19006438FB /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		76BFE23B1CEB4078006438FB /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		76C9182D1CE5C723001173B0 /* VOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C918301CE5C723001173B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +48,6 @@
 		76C9184C1CE5C723001173B0 /* VOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C918501CE5C723001173B0 /* VOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOneUITests.swift; sourceTree = "<group>"; };
 		76C918521CE5C723001173B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76D5A30F1CEDD47700A611A0 /* VOne-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VOne-Bridging-Header.h"; sourceTree = "<group>"; };
 		E03BAD9C84D18F10AFF5A7CC /* Pods-VOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-VOne/Pods-VOne.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,8 +124,6 @@
 				76C918371CE5C723001173B0 /* Assets.xcassets */,
 				76C918391CE5C723001173B0 /* LaunchScreen.storyboard */,
 				76C9183C1CE5C723001173B0 /* Info.plist */,
-				76BFE2391CEB0E19006438FB /* MyPlayground.playground */,
-				76D5A30F1CEDD47700A611A0 /* VOne-Bridging-Header.h */,
 			);
 			path = VOne;
 			sourceTree = "<group>";
@@ -472,7 +468,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.VOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "VOne/VOne-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -487,7 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.VOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "VOne/VOne-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

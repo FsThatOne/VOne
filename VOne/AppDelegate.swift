@@ -19,8 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.rootViewController = TestViewController()
         window!.makeKeyAndVisible()
         
-        registLeanCloud(launchOptions)
-        
         return true
     }
 
@@ -46,14 +44,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
-}
-
-extension AppDelegate {
-    
-    func registLeanCloud(launchOptions: [NSObject: AnyObject]?) {
-        AVOSCloud.setApplicationId("URn1LKFNWsfbIp4KRgm3eN9O-gzGzoHsz", clientKey: "k5f6AnbBfj0gYWJix8KnTY0K")
-        AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
-    }
-    
 }
