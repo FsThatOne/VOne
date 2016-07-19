@@ -212,11 +212,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "王正一";
 				TargetAttributes = {
 					76C9182C1CE5C723001173B0 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2ZD2CZ782K;
+						DevelopmentTeamName = "Zhengyi Wang";
 					};
 					76C918401CE5C723001173B0 = {
 						CreatedOnToolsVersion = 7.3;
@@ -484,6 +486,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.VOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -507,6 +510,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.VOneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VOne.app/VOne";
 			};
 			name = Release;
@@ -529,6 +533,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.VOneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TEST_TARGET_NAME = VOne;
 			};
 			name = Release;

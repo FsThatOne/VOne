@@ -13,6 +13,7 @@ pod 'SVProgressHUD'
 pod 'RxSwift'
 pod 'RxCocoa'
 pod 'FSLogger'
+pod 'RealmSwift'
 
 end
 
