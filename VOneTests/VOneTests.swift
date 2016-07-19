@@ -2,8 +2,8 @@
 //  VOneTests.swift
 //  VOneTests
 //
-//  Created by 王正一 on 16/5/13.
-//  Copyright © 2016年 王正一. All rights reserved.
+//  Created by 王正一 on 16/7/19.
+//  Copyright © 2016年 FsThatOne. All rights reserved.
 //
 
 import XCTest
@@ -28,7 +28,7 @@ class VOneTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

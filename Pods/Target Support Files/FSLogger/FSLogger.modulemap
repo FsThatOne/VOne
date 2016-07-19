@@ -1,6 +1,0 @@
-framework module FSLogger {
-  umbrella header "FSLogger-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "76C9182C1CE5C723001173B0"
+               BlueprintIdentifier = "F2C7D6181D3E36EE00E0EDBD"
                BuildableName = "VOne.app"
                BlueprintName = "VOne"
                ReferencedContainer = "container:VOne.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "76C918401CE5C723001173B0"
+               BlueprintIdentifier = "F2C7D62C1D3E36EE00E0EDBD"
                BuildableName = "VOneTests.xctest"
                BlueprintName = "VOneTests"
                ReferencedContainer = "container:VOne.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "76C9184B1CE5C723001173B0"
+               BlueprintIdentifier = "F2C7D6371D3E36EF00E0EDBD"
                BuildableName = "VOneUITests.xctest"
                BlueprintName = "VOneUITests"
                ReferencedContainer = "container:VOne.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "76C9182C1CE5C723001173B0"
+            BlueprintIdentifier = "F2C7D6181D3E36EE00E0EDBD"
             BuildableName = "VOne.app"
             BlueprintName = "VOne"
             ReferencedContainer = "container:VOne.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "76C9182C1CE5C723001173B0"
+            BlueprintIdentifier = "F2C7D6181D3E36EE00E0EDBD"
             BuildableName = "VOne.app"
             BlueprintName = "VOne"
             ReferencedContainer = "container:VOne.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "76C9182C1CE5C723001173B0"
+            BlueprintIdentifier = "F2C7D6181D3E36EE00E0EDBD"
             BuildableName = "VOne.app"
             BlueprintName = "VOne"
             ReferencedContainer = "container:VOne.xcodeproj">

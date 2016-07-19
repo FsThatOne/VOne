@@ -7,67 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		76BFE23C1CEB4078006438FB /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFE23B1CEB4078006438FB /* TestViewController.swift */; };
-		76C918311CE5C723001173B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C918301CE5C723001173B0 /* AppDelegate.swift */; };
-		76C918381CE5C723001173B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C918371CE5C723001173B0 /* Assets.xcassets */; };
-		76C9183B1CE5C723001173B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76C918391CE5C723001173B0 /* LaunchScreen.storyboard */; };
-		76C918461CE5C723001173B0 /* VOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C918451CE5C723001173B0 /* VOneTests.swift */; };
-		76C918511CE5C723001173B0 /* VOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C918501CE5C723001173B0 /* VOneUITests.swift */; };
-		D984972FB34E03ED0C2C9AD7 /* Pods_VOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625BBFFB24247070C3FD70DD /* Pods_VOne.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		F2C7D61D1D3E36EE00E0EDBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7D61C1D3E36EE00E0EDBD /* AppDelegate.swift */; };
+		F2C7D6221D3E36EE00E0EDBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C7D6201D3E36EE00E0EDBD /* Main.storyboard */; };
+		F2C7D6241D3E36EE00E0EDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C7D6231D3E36EE00E0EDBD /* Assets.xcassets */; };
+		F2C7D6271D3E36EE00E0EDBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C7D6251D3E36EE00E0EDBD /* LaunchScreen.storyboard */; };
+		F2C7D6321D3E36EE00E0EDBD /* VOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7D6311D3E36EE00E0EDBD /* VOneTests.swift */; };
+		F2C7D63D1D3E36EF00E0EDBD /* VOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7D63C1D3E36EF00E0EDBD /* VOneUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		76C918421CE5C723001173B0 /* PBXContainerItemProxy */ = {
+		F2C7D62E1D3E36EE00E0EDBD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 76C918251CE5C723001173B0 /* Project object */;
+			containerPortal = F2C7D6111D3E36EE00E0EDBD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 76C9182C1CE5C723001173B0;
+			remoteGlobalIDString = F2C7D6181D3E36EE00E0EDBD;
 			remoteInfo = VOne;
 		};
-		76C9184D1CE5C723001173B0 /* PBXContainerItemProxy */ = {
+		F2C7D6391D3E36EF00E0EDBD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 76C918251CE5C723001173B0 /* Project object */;
+			containerPortal = F2C7D6111D3E36EE00E0EDBD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 76C9182C1CE5C723001173B0;
+			remoteGlobalIDString = F2C7D6181D3E36EE00E0EDBD;
 			remoteInfo = VOne;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2984149B5E721C407EB266B4 /* Pods-VOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VOne/Pods-VOne.debug.xcconfig"; sourceTree = "<group>"; };
-		625BBFFB24247070C3FD70DD /* Pods_VOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		76BFE23B1CEB4078006438FB /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		76C9182D1CE5C723001173B0 /* VOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		76C918301CE5C723001173B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76C918371CE5C723001173B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		76C9183A1CE5C723001173B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		76C9183C1CE5C723001173B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76C918411CE5C723001173B0 /* VOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		76C918451CE5C723001173B0 /* VOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOneTests.swift; sourceTree = "<group>"; };
-		76C918471CE5C723001173B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76C9184C1CE5C723001173B0 /* VOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		76C918501CE5C723001173B0 /* VOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOneUITests.swift; sourceTree = "<group>"; };
-		76C918521CE5C723001173B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E03BAD9C84D18F10AFF5A7CC /* Pods-VOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-VOne/Pods-VOne.release.xcconfig"; sourceTree = "<group>"; };
+		F2C7D6191D3E36EE00E0EDBD /* VOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C7D61C1D3E36EE00E0EDBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2C7D6211D3E36EE00E0EDBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2C7D6231D3E36EE00E0EDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2C7D6261D3E36EE00E0EDBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2C7D6281D3E36EE00E0EDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C7D62D1D3E36EE00E0EDBD /* VOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C7D6311D3E36EE00E0EDBD /* VOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOneTests.swift; sourceTree = "<group>"; };
+		F2C7D6331D3E36EE00E0EDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C7D6381D3E36EF00E0EDBD /* VOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C7D63C1D3E36EF00E0EDBD /* VOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOneUITests.swift; sourceTree = "<group>"; };
+		F2C7D63E1D3E36EF00E0EDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		76C9182A1CE5C723001173B0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D984972FB34E03ED0C2C9AD7 /* Pods_VOne.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		76C9183E1CE5C723001173B0 /* Frameworks */ = {
+		F2C7D6161D3E36EE00E0EDBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76C918491CE5C723001173B0 /* Frameworks */ = {
+		F2C7D62A1D3E36EE00E0EDBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C7D6351D3E36EF00E0EDBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,71 +72,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		28A6332A962E55B2F5F76AEE /* Pods */ = {
+		F2C7D6101D3E36EE00E0EDBD = {
 			isa = PBXGroup;
 			children = (
-				2984149B5E721C407EB266B4 /* Pods-VOne.debug.xcconfig */,
-				E03BAD9C84D18F10AFF5A7CC /* Pods-VOne.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		290402D6416C065817332B14 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				625BBFFB24247070C3FD70DD /* Pods_VOne.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		76C918241CE5C723001173B0 = {
-			isa = PBXGroup;
-			children = (
-				76C9182F1CE5C723001173B0 /* VOne */,
-				76C918441CE5C723001173B0 /* VOneTests */,
-				76C9184F1CE5C723001173B0 /* VOneUITests */,
-				76C9182E1CE5C723001173B0 /* Products */,
-				28A6332A962E55B2F5F76AEE /* Pods */,
-				290402D6416C065817332B14 /* Frameworks */,
+				F2C7D61B1D3E36EE00E0EDBD /* VOne */,
+				F2C7D6301D3E36EE00E0EDBD /* VOneTests */,
+				F2C7D63B1D3E36EF00E0EDBD /* VOneUITests */,
+				F2C7D61A1D3E36EE00E0EDBD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		76C9182E1CE5C723001173B0 /* Products */ = {
+		F2C7D61A1D3E36EE00E0EDBD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76C9182D1CE5C723001173B0 /* VOne.app */,
-				76C918411CE5C723001173B0 /* VOneTests.xctest */,
-				76C9184C1CE5C723001173B0 /* VOneUITests.xctest */,
+				F2C7D6191D3E36EE00E0EDBD /* VOne.app */,
+				F2C7D62D1D3E36EE00E0EDBD /* VOneTests.xctest */,
+				F2C7D6381D3E36EF00E0EDBD /* VOneUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		76C9182F1CE5C723001173B0 /* VOne */ = {
+		F2C7D61B1D3E36EE00E0EDBD /* VOne */ = {
 			isa = PBXGroup;
 			children = (
-				76C918301CE5C723001173B0 /* AppDelegate.swift */,
-				76BFE23B1CEB4078006438FB /* TestViewController.swift */,
-				76C918371CE5C723001173B0 /* Assets.xcassets */,
-				76C918391CE5C723001173B0 /* LaunchScreen.storyboard */,
-				76C9183C1CE5C723001173B0 /* Info.plist */,
+				F2C7D61C1D3E36EE00E0EDBD /* AppDelegate.swift */,
+				F2C7D6201D3E36EE00E0EDBD /* Main.storyboard */,
+				F2C7D6231D3E36EE00E0EDBD /* Assets.xcassets */,
+				F2C7D6251D3E36EE00E0EDBD /* LaunchScreen.storyboard */,
+				F2C7D6281D3E36EE00E0EDBD /* Info.plist */,
 			);
 			path = VOne;
 			sourceTree = "<group>";
 		};
-		76C918441CE5C723001173B0 /* VOneTests */ = {
+		F2C7D6301D3E36EE00E0EDBD /* VOneTests */ = {
 			isa = PBXGroup;
 			children = (
-				76C918451CE5C723001173B0 /* VOneTests.swift */,
-				76C918471CE5C723001173B0 /* Info.plist */,
+				F2C7D6311D3E36EE00E0EDBD /* VOneTests.swift */,
+				F2C7D6331D3E36EE00E0EDBD /* Info.plist */,
 			);
 			path = VOneTests;
 			sourceTree = "<group>";
 		};
-		76C9184F1CE5C723001173B0 /* VOneUITests */ = {
+		F2C7D63B1D3E36EF00E0EDBD /* VOneUITests */ = {
 			isa = PBXGroup;
 			children = (
-				76C918501CE5C723001173B0 /* VOneUITests.swift */,
-				76C918521CE5C723001173B0 /* Info.plist */,
+				F2C7D63C1D3E36EF00E0EDBD /* VOneUITests.swift */,
+				F2C7D63E1D3E36EF00E0EDBD /* Info.plist */,
 			);
 			path = VOneUITests;
 			sourceTree = "<group>";
@@ -149,16 +125,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		76C9182C1CE5C723001173B0 /* VOne */ = {
+		F2C7D6181D3E36EE00E0EDBD /* VOne */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76C918551CE5C723001173B0 /* Build configuration list for PBXNativeTarget "VOne" */;
+			buildConfigurationList = F2C7D6411D3E36EF00E0EDBD /* Build configuration list for PBXNativeTarget "VOne" */;
 			buildPhases = (
-				560C175DA6352A6C0F96F7FC /* 📦 Check Pods Manifest.lock */,
-				76C918291CE5C723001173B0 /* Sources */,
-				76C9182A1CE5C723001173B0 /* Frameworks */,
-				76C9182B1CE5C723001173B0 /* Resources */,
-				40CAE3669FAE45F0F784D0D9 /* 📦 Embed Pods Frameworks */,
-				AA9BB6953ECB8249A967EAFB /* 📦 Copy Pods Resources */,
+				F2C7D6151D3E36EE00E0EDBD /* Sources */,
+				F2C7D6161D3E36EE00E0EDBD /* Frameworks */,
+				F2C7D6171D3E36EE00E0EDBD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -166,71 +139,78 @@
 			);
 			name = VOne;
 			productName = VOne;
-			productReference = 76C9182D1CE5C723001173B0 /* VOne.app */;
+			productReference = F2C7D6191D3E36EE00E0EDBD /* VOne.app */;
 			productType = "com.apple.product-type.application";
 		};
-		76C918401CE5C723001173B0 /* VOneTests */ = {
+		F2C7D62C1D3E36EE00E0EDBD /* VOneTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76C918581CE5C723001173B0 /* Build configuration list for PBXNativeTarget "VOneTests" */;
+			buildConfigurationList = F2C7D6441D3E36EF00E0EDBD /* Build configuration list for PBXNativeTarget "VOneTests" */;
 			buildPhases = (
-				76C9183D1CE5C723001173B0 /* Sources */,
-				76C9183E1CE5C723001173B0 /* Frameworks */,
-				76C9183F1CE5C723001173B0 /* Resources */,
+				F2C7D6291D3E36EE00E0EDBD /* Sources */,
+				F2C7D62A1D3E36EE00E0EDBD /* Frameworks */,
+				F2C7D62B1D3E36EE00E0EDBD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				76C918431CE5C723001173B0 /* PBXTargetDependency */,
+				F2C7D62F1D3E36EE00E0EDBD /* PBXTargetDependency */,
 			);
 			name = VOneTests;
 			productName = VOneTests;
-			productReference = 76C918411CE5C723001173B0 /* VOneTests.xctest */;
+			productReference = F2C7D62D1D3E36EE00E0EDBD /* VOneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		76C9184B1CE5C723001173B0 /* VOneUITests */ = {
+		F2C7D6371D3E36EF00E0EDBD /* VOneUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76C9185B1CE5C723001173B0 /* Build configuration list for PBXNativeTarget "VOneUITests" */;
+			buildConfigurationList = F2C7D6471D3E36EF00E0EDBD /* Build configuration list for PBXNativeTarget "VOneUITests" */;
 			buildPhases = (
-				76C918481CE5C723001173B0 /* Sources */,
-				76C918491CE5C723001173B0 /* Frameworks */,
-				76C9184A1CE5C723001173B0 /* Resources */,
+				F2C7D6341D3E36EF00E0EDBD /* Sources */,
+				F2C7D6351D3E36EF00E0EDBD /* Frameworks */,
+				F2C7D6361D3E36EF00E0EDBD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				76C9184E1CE5C723001173B0 /* PBXTargetDependency */,
+				F2C7D63A1D3E36EF00E0EDBD /* PBXTargetDependency */,
 			);
 			name = VOneUITests;
 			productName = VOneUITests;
-			productReference = 76C9184C1CE5C723001173B0 /* VOneUITests.xctest */;
+			productReference = F2C7D6381D3E36EF00E0EDBD /* VOneUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		76C918251CE5C723001173B0 /* Project object */ = {
+		F2C7D6111D3E36EE00E0EDBD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = "王正一";
+				ORGANIZATIONNAME = FsThatOne;
 				TargetAttributes = {
-					76C9182C1CE5C723001173B0 = {
-						CreatedOnToolsVersion = 7.3;
+					F2C7D6181D3E36EE00E0EDBD = {
+						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2ZD2CZ782K;
 						DevelopmentTeamName = "Zhengyi Wang";
+						ProvisioningStyle = Automatic;
 					};
-					76C918401CE5C723001173B0 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 76C9182C1CE5C723001173B0;
+					F2C7D62C1D3E36EE00E0EDBD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2ZD2CZ782K;
+						DevelopmentTeamName = "Zhengyi Wang";
+						ProvisioningStyle = Automatic;
+						TestTargetID = F2C7D6181D3E36EE00E0EDBD;
 					};
-					76C9184B1CE5C723001173B0 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 76C9182C1CE5C723001173B0;
+					F2C7D6371D3E36EF00E0EDBD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2ZD2CZ782K;
+						DevelopmentTeamName = "Zhengyi Wang";
+						ProvisioningStyle = Automatic;
+						TestTargetID = F2C7D6181D3E36EE00E0EDBD;
 					};
 				};
 			};
-			buildConfigurationList = 76C918281CE5C723001173B0 /* Build configuration list for PBXProject "VOne" */;
+			buildConfigurationList = F2C7D6141D3E36EE00E0EDBD /* Build configuration list for PBXProject "VOne" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -238,36 +218,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 76C918241CE5C723001173B0;
-			productRefGroup = 76C9182E1CE5C723001173B0 /* Products */;
+			mainGroup = F2C7D6101D3E36EE00E0EDBD;
+			productRefGroup = F2C7D61A1D3E36EE00E0EDBD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				76C9182C1CE5C723001173B0 /* VOne */,
-				76C918401CE5C723001173B0 /* VOneTests */,
-				76C9184B1CE5C723001173B0 /* VOneUITests */,
+				F2C7D6181D3E36EE00E0EDBD /* VOne */,
+				F2C7D62C1D3E36EE00E0EDBD /* VOneTests */,
+				F2C7D6371D3E36EF00E0EDBD /* VOneUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		76C9182B1CE5C723001173B0 /* Resources */ = {
+		F2C7D6171D3E36EE00E0EDBD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76C9183B1CE5C723001173B0 /* LaunchScreen.storyboard in Resources */,
-				76C918381CE5C723001173B0 /* Assets.xcassets in Resources */,
+				F2C7D6271D3E36EE00E0EDBD /* LaunchScreen.storyboard in Resources */,
+				F2C7D6241D3E36EE00E0EDBD /* Assets.xcassets in Resources */,
+				F2C7D6221D3E36EE00E0EDBD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76C9183F1CE5C723001173B0 /* Resources */ = {
+		F2C7D62B1D3E36EE00E0EDBD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76C9184A1CE5C723001173B0 /* Resources */ = {
+		F2C7D6361D3E36EF00E0EDBD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -276,100 +257,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		40CAE3669FAE45F0F784D0D9 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VOne/Pods-VOne-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		560C175DA6352A6C0F96F7FC /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AA9BB6953ECB8249A967EAFB /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VOne/Pods-VOne-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		76C918291CE5C723001173B0 /* Sources */ = {
+		F2C7D6151D3E36EE00E0EDBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76BFE23C1CEB4078006438FB /* TestViewController.swift in Sources */,
-				76C918311CE5C723001173B0 /* AppDelegate.swift in Sources */,
+				F2C7D61D1D3E36EE00E0EDBD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76C9183D1CE5C723001173B0 /* Sources */ = {
+		F2C7D6291D3E36EE00E0EDBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76C918461CE5C723001173B0 /* VOneTests.swift in Sources */,
+				F2C7D6321D3E36EE00E0EDBD /* VOneTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76C918481CE5C723001173B0 /* Sources */ = {
+		F2C7D6341D3E36EF00E0EDBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76C918511CE5C723001173B0 /* VOneUITests.swift in Sources */,
+				F2C7D63D1D3E36EF00E0EDBD /* VOneUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		76C918431CE5C723001173B0 /* PBXTargetDependency */ = {
+		F2C7D62F1D3E36EE00E0EDBD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 76C9182C1CE5C723001173B0 /* VOne */;
-			targetProxy = 76C918421CE5C723001173B0 /* PBXContainerItemProxy */;
+			target = F2C7D6181D3E36EE00E0EDBD /* VOne */;
+			targetProxy = F2C7D62E1D3E36EE00E0EDBD /* PBXContainerItemProxy */;
 		};
-		76C9184E1CE5C723001173B0 /* PBXTargetDependency */ = {
+		F2C7D63A1D3E36EF00E0EDBD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 76C9182C1CE5C723001173B0 /* VOne */;
-			targetProxy = 76C9184D1CE5C723001173B0 /* PBXContainerItemProxy */;
+			target = F2C7D6181D3E36EE00E0EDBD /* VOne */;
+			targetProxy = F2C7D6391D3E36EF00E0EDBD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		76C918391CE5C723001173B0 /* LaunchScreen.storyboard */ = {
+		F2C7D6201D3E36EE00E0EDBD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				76C9183A1CE5C723001173B0 /* Base */,
+				F2C7D6211D3E36EE00E0EDBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2C7D6251D3E36EE00E0EDBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2C7D6261D3E36EE00E0EDBD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -377,7 +317,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		76C918531CE5C723001173B0 /* Debug */ = {
+		F2C7D63F1D3E36EF00E0EDBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -389,6 +329,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -414,15 +355,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		76C918541CE5C723001173B0 /* Release */ = {
+		F2C7D6401D3E36EF00E0EDBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -434,6 +376,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -453,87 +396,86 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		76C918561CE5C723001173B0 /* Debug */ = {
+		F2C7D6421D3E36EF00E0EDBD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2984149B5E721C407EB266B4 /* Pods-VOne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = VOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.VOne;
+				PRODUCT_BUNDLE_IDENTIFIER = FsThatOne.VOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		76C918571CE5C723001173B0 /* Release */ = {
+		F2C7D6431D3E36EF00E0EDBD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E03BAD9C84D18F10AFF5A7CC /* Pods-VOne.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = VOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.VOne;
+				PRODUCT_BUNDLE_IDENTIFIER = FsThatOne.VOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		76C918591CE5C723001173B0 /* Debug */ = {
+		F2C7D6451D3E36EF00E0EDBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = VOneTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.VOneTests;
+				PRODUCT_BUNDLE_IDENTIFIER = FsThatOne.TestDemos.VOneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VOne.app/VOne";
 			};
 			name = Debug;
 		};
-		76C9185A1CE5C723001173B0 /* Release */ = {
+		F2C7D6461D3E36EF00E0EDBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = VOneTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.VOneTests;
+				PRODUCT_BUNDLE_IDENTIFIER = FsThatOne.TestDemos.VOneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VOne.app/VOne";
 			};
 			name = Release;
 		};
-		76C9185C1CE5C723001173B0 /* Debug */ = {
+		F2C7D6481D3E36EF00E0EDBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = VOneUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.VOneUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = FsThatOne.TestDemos.VOneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = VOne;
 			};
 			name = Debug;
 		};
-		76C9185D1CE5C723001173B0 /* Release */ = {
+		F2C7D6491D3E36EF00E0EDBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = VOneUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.VOneUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = FsThatOne.TestDemos.VOneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = VOne;
 			};
 			name = Release;
@@ -541,43 +483,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		76C918281CE5C723001173B0 /* Build configuration list for PBXProject "VOne" */ = {
+		F2C7D6141D3E36EE00E0EDBD /* Build configuration list for PBXProject "VOne" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76C918531CE5C723001173B0 /* Debug */,
-				76C918541CE5C723001173B0 /* Release */,
+				F2C7D63F1D3E36EF00E0EDBD /* Debug */,
+				F2C7D6401D3E36EF00E0EDBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76C918551CE5C723001173B0 /* Build configuration list for PBXNativeTarget "VOne" */ = {
+		F2C7D6411D3E36EF00E0EDBD /* Build configuration list for PBXNativeTarget "VOne" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76C918561CE5C723001173B0 /* Debug */,
-				76C918571CE5C723001173B0 /* Release */,
+				F2C7D6421D3E36EF00E0EDBD /* Debug */,
+				F2C7D6431D3E36EF00E0EDBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76C918581CE5C723001173B0 /* Build configuration list for PBXNativeTarget "VOneTests" */ = {
+		F2C7D6441D3E36EF00E0EDBD /* Build configuration list for PBXNativeTarget "VOneTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76C918591CE5C723001173B0 /* Debug */,
-				76C9185A1CE5C723001173B0 /* Release */,
+				F2C7D6451D3E36EF00E0EDBD /* Debug */,
+				F2C7D6461D3E36EF00E0EDBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76C9185B1CE5C723001173B0 /* Build configuration list for PBXNativeTarget "VOneUITests" */ = {
+		F2C7D6471D3E36EF00E0EDBD /* Build configuration list for PBXNativeTarget "VOneUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76C9185C1CE5C723001173B0 /* Debug */,
-				76C9185D1CE5C723001173B0 /* Release */,
+				F2C7D6481D3E36EF00E0EDBD /* Debug */,
+				F2C7D6491D3E36EF00E0EDBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 76C918251CE5C723001173B0 /* Project object */;
+	rootObject = F2C7D6111D3E36EE00E0EDBD /* Project object */;
 }
