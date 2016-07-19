@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		F2C7D61D1D3E36EE00E0EDBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7D61C1D3E36EE00E0EDBD /* AppDelegate.swift */; };
 		F2C7D6241D3E36EE00E0EDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C7D6231D3E36EE00E0EDBD /* Assets.xcassets */; };
+		F2ED7DFB1D3E3DE600BDF81C /* FSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED7DFA1D3E3DE600BDF81C /* FSMainViewController.swift */; };
+		F2ED7DFD1D3E3E1300BDF81C /* FSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED7DFC1D3E3E1300BDF81C /* FSNavigationController.swift */; };
+		F2ED7DFF1D3E3E4E00BDF81C /* FSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED7DFE1D3E3E4E00BDF81C /* FSBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 		F2C7D6281D3E36EE00E0EDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2C7D62D1D3E36EE00E0EDBD /* VOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C7D6381D3E36EF00E0EDBD /* VOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2ED7DFA1D3E3DE600BDF81C /* FSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMainViewController.swift; sourceTree = "<group>"; };
+		F2ED7DFC1D3E3E1300BDF81C /* FSNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSNavigationController.swift; sourceTree = "<group>"; };
+		F2ED7DFE1D3E3E4E00BDF81C /* FSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSBaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +89,71 @@
 		F2C7D61B1D3E36EE00E0EDBD /* VOne */ = {
 			isa = PBXGroup;
 			children = (
+				F2ED7DF31D3E3D6900BDF81C /* Classes */,
 				F2C7D61C1D3E36EE00E0EDBD /* AppDelegate.swift */,
 				F2C7D6231D3E36EE00E0EDBD /* Assets.xcassets */,
 				F2C7D6281D3E36EE00E0EDBD /* Info.plist */,
 			);
 			path = VOne;
+			sourceTree = "<group>";
+		};
+		F2ED7DF31D3E3D6900BDF81C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F2ED7DF61D3E3D6900BDF81C /* View */,
+				F2ED7DF81D3E3D6900BDF81C /* ViewModel */,
+				F2ED7DF41D3E3D6900BDF81C /* Model */,
+				F2ED7DF51D3E3D6900BDF81C /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F2ED7DF41D3E3D6900BDF81C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2ED7DF51D3E3D6900BDF81C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F2ED7DF61D3E3D6900BDF81C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2ED7DF91D3E3D9E00BDF81C /* Main */,
+				F2ED7DF71D3E3D6900BDF81C /* Mine */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2ED7DF71D3E3D6900BDF81C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		F2ED7DF81D3E3D6900BDF81C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			path = VOne/Classes/ViewModel;
+			sourceTree = SOURCE_ROOT;
+		};
+		F2ED7DF91D3E3D9E00BDF81C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F2ED7DFA1D3E3DE600BDF81C /* FSMainViewController.swift */,
+				F2ED7DFC1D3E3E1300BDF81C /* FSNavigationController.swift */,
+				F2ED7DFE1D3E3E4E00BDF81C /* FSBaseViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2ED7DFF1D3E3E4E00BDF81C /* FSBaseViewController.swift in Sources */,
+				F2ED7DFB1D3E3DE600BDF81C /* FSMainViewController.swift in Sources */,
 				F2C7D61D1D3E36EE00E0EDBD /* AppDelegate.swift in Sources */,
+				F2ED7DFD1D3E3E1300BDF81C /* FSNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
