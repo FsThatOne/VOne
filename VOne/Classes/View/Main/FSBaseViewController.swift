@@ -11,6 +11,8 @@ import UIKit
 class FSBaseViewController: UIViewController {
     // tableView 可能有可能没有,因此是可选的
     var tableView: UITableView?
+    // 刷新控件
+    var refreshControl: UIRefreshControl?
     // 自定义导航条
     lazy var navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.width(), height: 64))
     //自定义导航条目
@@ -18,7 +20,6 @@ class FSBaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
     }
     // 重写title属性的setter,设置navItem的title
     override var title: String? {
@@ -28,7 +29,7 @@ class FSBaseViewController: UIViewController {
     }
     //加载数据
     func loadData() {
-    
+
     }
 }
 
@@ -49,6 +50,12 @@ extension FSBaseViewController {
         tableView?.dataSource = self
         tableView?.tableFooterView = UIView()
         view.insertSubview(tableView!, belowSubview: navBar)
+        
+        // 实例化刷新控件
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(loadData), for: .valueChanged)
+        // 将刷新控件添加到tableView
+        tableView?.addSubview(refreshControl!)
     }
     
     // 设置导航条

@@ -21,8 +21,12 @@ class SessionsViewController: FSBaseViewController {
     }
     // 加载会话列表
     override func loadData() {
-        for i in 0..<10 {
-            sessionList.insert(i.description, at: 0)
+        DispatchQueue.main.after(when: DispatchTime.now() + 1) {
+            for i in 0..<15 {
+                self.sessionList.insert(i.description, at: 0)
+            }
+            self.refreshControl?.endRefreshing()
+            self.tableView?.reloadData()
         }
     }
 }
