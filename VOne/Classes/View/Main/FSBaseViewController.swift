@@ -18,16 +18,18 @@ class FSBaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loadData()
     }
-    
     // 重写title属性的setter,设置navItem的title
     override var title: String? {
         didSet {
             navItem.title = title
         }
     }
+    //加载数据
+    func loadData() {
     
+    }
 }
 
 extension FSBaseViewController {
@@ -35,15 +37,18 @@ extension FSBaseViewController {
     func setupUI() {
         setupNavBar()
         setupTableView()
+        automaticallyAdjustsScrollViewInsets = false
     }
     
     // 设置表格视图
     private func setupTableView() {
         tableView = UITableView(frame: view.bounds, style: .plain)
-        view.insertSubview(tableView!, belowSubview: navBar)
+        tableView?.contentInset = UIEdgeInsets(top: navBar.bounds.height, left: 0, bottom: tabBarController?.tabBar.bounds.height ?? 49, right: 0)
         // 设置数据源->代理 目的:子类直接实现代理方法
         tableView?.delegate = self
         tableView?.dataSource = self
+        tableView?.tableFooterView = UIView()
+        view.insertSubview(tableView!, belowSubview: navBar)
     }
     
     // 设置导航条
