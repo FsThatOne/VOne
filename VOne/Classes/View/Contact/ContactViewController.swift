@@ -21,7 +21,6 @@ class ContactViewController: FSBaseViewController {
 extension ContactViewController {
     override func setupUI() {
         super.setupUI()
-        view.backgroundColor = UIColor.yellow()
     }
     
 }

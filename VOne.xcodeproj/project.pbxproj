@@ -14,6 +14,7 @@
 		F2D7129A1D40DFF20022E0C2 /* MomentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D712991D40DFF20022E0C2 /* MomentsViewController.swift */; };
 		F2D7129C1D40E0040022E0C2 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7129B1D40E0040022E0C2 /* MineViewController.swift */; };
 		F2D712A31D4216420022E0C2 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D712A21D4216420022E0C2 /* UIScreen+Extension.swift */; };
+		F2D712AA1D421E430022E0C2 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D712A91D421E430022E0C2 /* UIBarButtonItem+Extension.swift */; };
 		F2ED7DFB1D3E3DE600BDF81C /* FSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED7DFA1D3E3DE600BDF81C /* FSMainViewController.swift */; };
 		F2ED7DFD1D3E3E1300BDF81C /* FSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED7DFC1D3E3E1300BDF81C /* FSNavigationController.swift */; };
 		F2ED7DFF1D3E3E4E00BDF81C /* FSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED7DFE1D3E3E4E00BDF81C /* FSBaseViewController.swift */; };
@@ -49,6 +50,7 @@
 		F2D712991D40DFF20022E0C2 /* MomentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentsViewController.swift; sourceTree = "<group>"; };
 		F2D7129B1D40E0040022E0C2 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		F2D712A21D4216420022E0C2 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		F2D712A91D421E430022E0C2 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		F2ED7DFA1D3E3DE600BDF81C /* FSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMainViewController.swift; sourceTree = "<group>"; };
 		F2ED7DFC1D3E3E1300BDF81C /* FSNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSNavigationController.swift; sourceTree = "<group>"; };
 		F2ED7DFE1D3E3E4E00BDF81C /* FSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSBaseViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				F279A2B11D40832800C17DB8 /* Bundle+Extension.swift */,
 				F2D712A21D4216420022E0C2 /* UIScreen+Extension.swift */,
+				F2D712A91D421E430022E0C2 /* UIBarButtonItem+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				F2C7D61D1D3E36EE00E0EDBD /* AppDelegate.swift in Sources */,
 				F2ED7DFD1D3E3E1300BDF81C /* FSNavigationController.swift in Sources */,
 				F2D712981D40DFE70022E0C2 /* ContactViewController.swift in Sources */,
+				F2D712AA1D421E430022E0C2 /* UIBarButtonItem+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

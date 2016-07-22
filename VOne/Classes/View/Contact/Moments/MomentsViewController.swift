@@ -23,7 +23,6 @@ extension MomentsViewController {
     
     override func setupUI() {
         super.setupUI()
-        view.backgroundColor = UIColor.red()
     }
     
 }

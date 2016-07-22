@@ -10,11 +10,18 @@ import UIKit
 
 class FSMainViewController: UITabBarController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupChildViewControllers()
     }
-
+    
+    // 设置支持的屏幕方向, 设置之后, 当前控制器和其子控制器都遵循这个道理, modal视图不受影响
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
+    
 }
 
 // MARK: 设置界面
@@ -24,7 +31,7 @@ extension FSMainViewController {
         let dictArr = [
             ["name": "SessionsViewController", "title": "聊天", "imageName": "chat"],
             ["name": "ContactViewController", "title": "通讯录", "imageName": "contact"],
-            ["": ""],
+//            ["": ""],
             ["name": "MomentsViewController", "title": "圈子", "imageName": "mycircle"],
             ["name": "MineViewController", "title": "个人中心", "imageName": "mine_center"],
         ]

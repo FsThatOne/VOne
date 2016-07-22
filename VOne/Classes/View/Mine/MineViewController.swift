@@ -13,8 +13,6 @@ class MineViewController: FSBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        navigationController?.navigationBar.backgroundColor = UIColor.clear()
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "设置", style: .plain, target: self, action: #selector(setting))
     }
     
     @objc private func setting() {
@@ -26,7 +24,8 @@ extension MineViewController {
     
     override func setupUI() {
         super.setupUI()
-        view.backgroundColor = UIColor.orange()
+        navItem.rightBarButtonItem = UIBarButtonItem(title: "设置", target: self, selector: #selector(setting))
+        
     }
     
 }

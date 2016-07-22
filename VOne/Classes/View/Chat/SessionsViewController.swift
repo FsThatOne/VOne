@@ -22,7 +22,6 @@ class SessionsViewController: FSBaseViewController {
 extension SessionsViewController {
     override func setupUI() {
         super.setupUI()
-        view.backgroundColor = UIColor.blue()
     }
     
 }
