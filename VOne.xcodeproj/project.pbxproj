@@ -10,9 +10,10 @@
 		F279A2B21D40832800C17DB8 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F279A2B11D40832800C17DB8 /* Bundle+Extension.swift */; };
 		F2C7D61D1D3E36EE00E0EDBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7D61C1D3E36EE00E0EDBD /* AppDelegate.swift */; };
 		F2D712961D40DFDA0022E0C2 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D712951D40DFDA0022E0C2 /* SessionsViewController.swift */; };
-		F2D712981D40DFE70022E0C2 /* ContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D712971D40DFE70022E0C2 /* ContractViewController.swift */; };
+		F2D712981D40DFE70022E0C2 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D712971D40DFE70022E0C2 /* ContactViewController.swift */; };
 		F2D7129A1D40DFF20022E0C2 /* MomentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D712991D40DFF20022E0C2 /* MomentsViewController.swift */; };
 		F2D7129C1D40E0040022E0C2 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7129B1D40E0040022E0C2 /* MineViewController.swift */; };
+		F2D712A31D4216420022E0C2 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D712A21D4216420022E0C2 /* UIScreen+Extension.swift */; };
 		F2ED7DFB1D3E3DE600BDF81C /* FSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED7DFA1D3E3DE600BDF81C /* FSMainViewController.swift */; };
 		F2ED7DFD1D3E3E1300BDF81C /* FSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED7DFC1D3E3E1300BDF81C /* FSNavigationController.swift */; };
 		F2ED7DFF1D3E3E4E00BDF81C /* FSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED7DFE1D3E3E4E00BDF81C /* FSBaseViewController.swift */; };
@@ -44,9 +45,10 @@
 		F2C7D62D1D3E36EE00E0EDBD /* VOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C7D6381D3E36EF00E0EDBD /* VOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D712951D40DFDA0022E0C2 /* SessionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
-		F2D712971D40DFE70022E0C2 /* ContractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractViewController.swift; sourceTree = "<group>"; };
+		F2D712971D40DFE70022E0C2 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		F2D712991D40DFF20022E0C2 /* MomentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentsViewController.swift; sourceTree = "<group>"; };
 		F2D7129B1D40E0040022E0C2 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		F2D712A21D4216420022E0C2 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		F2ED7DFA1D3E3DE600BDF81C /* FSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMainViewController.swift; sourceTree = "<group>"; };
 		F2ED7DFC1D3E3E1300BDF81C /* FSNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSNavigationController.swift; sourceTree = "<group>"; };
 		F2ED7DFE1D3E3E4E00BDF81C /* FSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSBaseViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				F279A2B11D40832800C17DB8 /* Bundle+Extension.swift */,
+				F2D712A21D4216420022E0C2 /* UIScreen+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -126,7 +129,7 @@
 		F2D712931D40DF000022E0C2 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
-				F2D712971D40DFE70022E0C2 /* ContractViewController.swift */,
+				F2D712971D40DFE70022E0C2 /* ContactViewController.swift */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -347,10 +350,11 @@
 				F2D7129C1D40E0040022E0C2 /* MineViewController.swift in Sources */,
 				F2D712961D40DFDA0022E0C2 /* SessionsViewController.swift in Sources */,
 				F279A2B21D40832800C17DB8 /* Bundle+Extension.swift in Sources */,
+				F2D712A31D4216420022E0C2 /* UIScreen+Extension.swift in Sources */,
 				F2ED7DFB1D3E3DE600BDF81C /* FSMainViewController.swift in Sources */,
 				F2C7D61D1D3E36EE00E0EDBD /* AppDelegate.swift in Sources */,
 				F2ED7DFD1D3E3E1300BDF81C /* FSNavigationController.swift in Sources */,
-				F2D712981D40DFE70022E0C2 /* ContractViewController.swift in Sources */,
+				F2D712981D40DFE70022E0C2 /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

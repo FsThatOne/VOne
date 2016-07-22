@@ -12,7 +12,7 @@ class FSNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationBar.isHidden = true
     }
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {

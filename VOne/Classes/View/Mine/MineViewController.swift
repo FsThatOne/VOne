@@ -12,6 +12,7 @@ class MineViewController: FSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         navigationController?.navigationBar.backgroundColor = UIColor.clear()
 //        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "设置", style: .plain, target: self, action: #selector(setting))
     }
@@ -19,15 +20,13 @@ class MineViewController: FSBaseViewController {
     @objc private func setting() {
         navigationController?.pushViewController(FSBaseViewController(), animated: true)
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+extension MineViewController {
     
-
     override func setupUI() {
+        super.setupUI()
         view.backgroundColor = UIColor.orange()
     }
-
+    
 }

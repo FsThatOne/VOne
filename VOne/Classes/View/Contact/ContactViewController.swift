@@ -16,11 +16,12 @@ class ContactViewController: FSBaseViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func setupUI() {
-        view.backgroundColor = UIColor.yellow()
-    }
 }
 
 extension ContactViewController {
+    override func setupUI() {
+        super.setupUI()
+        view.backgroundColor = UIColor.yellow()
+    }
     
 }

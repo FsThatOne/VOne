@@ -12,8 +12,6 @@ class FSMainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white()
-        tabBar.barTintColor = UIColor.white()
         setupChildViewControllers()
     }
 
@@ -25,7 +23,7 @@ extension FSMainViewController {
     private func setupChildViewControllers() {
         let dictArr = [
             ["name": "SessionsViewController", "title": "聊天", "imageName": "chat"],
-            ["name": "ContractViewController", "title": "通讯录", "imageName": "contact"],
+            ["name": "ContactViewController", "title": "通讯录", "imageName": "contact"],
             ["": ""],
             ["name": "MomentsViewController", "title": "圈子", "imageName": "mycircle"],
             ["name": "MineViewController", "title": "个人中心", "imageName": "mine_center"],

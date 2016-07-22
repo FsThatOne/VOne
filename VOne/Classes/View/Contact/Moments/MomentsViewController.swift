@@ -12,18 +12,18 @@ class MomentsViewController: FSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.red()
+        setupUI()
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+}
+
+extension MomentsViewController {
+    
+    override func setupUI() {
+        super.setupUI()
+        view.backgroundColor = UIColor.red()
     }
     
-
-    override func setupUI() {
-        view.backgroundColor = UIColor.white()
-    }
-
 }
