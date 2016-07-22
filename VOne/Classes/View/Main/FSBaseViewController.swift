@@ -19,4 +19,8 @@ class FSBaseViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
+    func setupUI() {
+        
+    }
+    
 }

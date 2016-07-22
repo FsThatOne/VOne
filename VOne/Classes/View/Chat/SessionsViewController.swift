@@ -12,7 +12,6 @@ class SessionsViewController: FSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white()
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +20,10 @@ class SessionsViewController: FSBaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func setupUI() {
+        view.backgroundColor = UIColor.white()
+    }
+    
     /*
     // MARK: - Navigation
 

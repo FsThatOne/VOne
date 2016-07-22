@@ -12,9 +12,8 @@ class MineViewController: FSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.orange()
-        // Do any additional setup after loading the view.
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "设置", style: .plain, target: self, action: #selector(setting))
+        navigationController?.navigationBar.backgroundColor = UIColor.clear()
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "设置", style: .plain, target: self, action: #selector(setting))
     }
     
     @objc private func setting() {
@@ -27,14 +26,8 @@ class MineViewController: FSBaseViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func setupUI() {
+        view.backgroundColor = UIColor.orange()
     }
-    */
 
 }
