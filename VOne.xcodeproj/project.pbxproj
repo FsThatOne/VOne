@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A643E39B1ECDBBDA970518AF /* Pods_VOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C04DCC38249BEBCD532B195E /* Pods_VOne.framework */; };
 		F279A2B21D40832800C17DB8 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F279A2B11D40832800C17DB8 /* Bundle+Extension.swift */; };
 		F2C7D61D1D3E36EE00E0EDBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7D61C1D3E36EE00E0EDBD /* AppDelegate.swift */; };
 		F2D712961D40DFDA0022E0C2 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D712951D40DFDA0022E0C2 /* SessionsViewController.swift */; };
@@ -39,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63499B18DDB562BD95F324BD /* Pods-VOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-VOne/Pods-VOne.release.xcconfig"; sourceTree = "<group>"; };
+		83101343B85F0BB2D09ED320 /* Pods_VOneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VOneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8666EB9437C2612836E9CE4D /* Pods_VOneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VOneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04DCC38249BEBCD532B195E /* Pods_VOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3829AFA1B95FF97541E39DD /* Pods-VOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VOne/Pods-VOne.debug.xcconfig"; sourceTree = "<group>"; };
 		F279A2B11D40832800C17DB8 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		F2C7D6191D3E36EE00E0EDBD /* VOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C7D61C1D3E36EE00E0EDBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A643E39B1ECDBBDA970518AF /* Pods_VOne.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +89,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		095C560BE7DEB3E2C1D5EF03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3829AFA1B95FF97541E39DD /* Pods-VOne.debug.xcconfig */,
+				63499B18DDB562BD95F324BD /* Pods-VOne.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7BCCD3B17273A081A24B2515 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C04DCC38249BEBCD532B195E /* Pods_VOne.framework */,
+				8666EB9437C2612836E9CE4D /* Pods_VOneTests.framework */,
+				83101343B85F0BB2D09ED320 /* Pods_VOneUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F279A2B01D40814100C17DB8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +123,8 @@
 			children = (
 				F2C7D61B1D3E36EE00E0EDBD /* VOne */,
 				F2C7D61A1D3E36EE00E0EDBD /* Products */,
+				095C560BE7DEB3E2C1D5EF03 /* Pods */,
+				7BCCD3B17273A081A24B2515 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,8 +141,8 @@
 		F2C7D61B1D3E36EE00E0EDBD /* VOne */ = {
 			isa = PBXGroup;
 			children = (
-				F2ED7DF31D3E3D6900BDF81C /* Classes */,
 				F2C7D61C1D3E36EE00E0EDBD /* AppDelegate.swift */,
+				F2ED7DF31D3E3D6900BDF81C /* Classes */,
 				F2FD22D21D40B31C00EBDEF5 /* Assets.xcassets */,
 				F2C7D6281D3E36EE00E0EDBD /* Info.plist */,
 			);
@@ -217,9 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2C7D6411D3E36EF00E0EDBD /* Build configuration list for PBXNativeTarget "VOne" */;
 			buildPhases = (
+				1B59E7C24915AC452E971B93 /* [CP] Check Pods Manifest.lock */,
 				F2C7D6151D3E36EE00E0EDBD /* Sources */,
 				F2C7D6161D3E36EE00E0EDBD /* Frameworks */,
 				F2C7D6171D3E36EE00E0EDBD /* Resources */,
+				72EC94249E045BB9A0798E2C /* [CP] Embed Pods Frameworks */,
+				98EBA0DFB512EA8515EEA04D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,13 +304,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = FsThatOne;
 				TargetAttributes = {
 					F2C7D6181D3E36EE00E0EDBD = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2ZD2CZ782K;
 						DevelopmentTeamName = "Zhengyi Wang";
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					F2C7D62C1D3E36EE00E0EDBD = {
@@ -342,6 +374,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B59E7C24915AC452E971B93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		72EC94249E045BB9A0798E2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VOne/Pods-VOne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98EBA0DFB512EA8515EEA04D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VOne/Pods-VOne-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F2C7D6151D3E36EE00E0EDBD /* Sources */ = {
@@ -407,8 +487,10 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -454,8 +536,10 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -481,10 +565,13 @@
 		};
 		F2C7D6421D3E36EF00E0EDBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3829AFA1B95FF97541E39DD /* Pods-VOne.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = VOne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FsThatOne.VOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -495,10 +582,13 @@
 		};
 		F2C7D6431D3E36EF00E0EDBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63499B18DDB562BD95F324BD /* Pods-VOne.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = VOne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FsThatOne.VOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";

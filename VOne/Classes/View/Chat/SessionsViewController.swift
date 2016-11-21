@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import Alamofire
 
 private let cellId = "cellId"
 
 class SessionsViewController: FSBaseViewController {
 
-    private lazy var sessionList = [String]()
+    fileprivate lazy var sessionList = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,13 +22,13 @@ class SessionsViewController: FSBaseViewController {
     }
     // 加载会话列表
     override func loadData() {
-        DispatchQueue.main.after(when: DispatchTime.now() + 1) {
-            for i in 0..<15 {
-                self.sessionList.insert(i.description, at: 0)
-            }
-            self.refreshControl?.endRefreshing()
-            self.tableView?.reloadData()
-        }
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
+                for i in 0..<15 {
+                    self.sessionList.insert(i.description, at: 0)
+                }
+                self.refreshControl?.endRefreshing()
+                self.tableView?.reloadData()
+        })
     }
 }
 

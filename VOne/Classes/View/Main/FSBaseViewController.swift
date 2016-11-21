@@ -29,7 +29,7 @@ class FSBaseViewController: UIViewController {
     }
     //加载数据
     func loadData() {
-
+        
     }
 }
 
@@ -42,7 +42,7 @@ extension FSBaseViewController {
     }
     
     // 设置表格视图
-    private func setupTableView() {
+    fileprivate func setupTableView() {
         tableView = UITableView(frame: view.bounds, style: .plain)
         tableView?.contentInset = UIEdgeInsets(top: navBar.bounds.height, left: 0, bottom: tabBarController?.tabBar.bounds.height ?? 49, right: 0)
         // 设置数据源->代理 目的:子类直接实现代理方法
@@ -59,10 +59,10 @@ extension FSBaseViewController {
     }
     
     // 设置导航条
-    private func setupNavBar() {
+    fileprivate func setupNavBar() {
         view.addSubview(navBar)
         navBar.items = [navItem]
-        navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.darkGray()]
+        navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.darkGray]
     }
     
 }

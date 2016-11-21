@@ -15,7 +15,7 @@ class MineViewController: FSBaseViewController {
         setupUI()
     }
     
-    @objc private func setting() {
+    @objc fileprivate func setting() {
         navigationController?.pushViewController(FSBaseViewController(), animated: true)
     }
 }
