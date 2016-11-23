@@ -14,10 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window!.rootViewController = FSMainViewController()
+//        window!.rootViewController = FSMainViewController()
+        let url = URL(fileURLWithPath: Bundle.main.path(forResource: "WelcomeBGM", ofType: "mp4")!)
+        let WelcomeVC = WelcomeViewController(vFrame: UIScreen.main.bounds, sTime: 2.0)
+        WelcomeVC.contentURL = url
+        window!.rootViewController = WelcomeVC
         window!.makeKeyAndVisible()
+        
         
         return true
     }

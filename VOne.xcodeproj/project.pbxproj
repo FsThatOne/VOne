@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A643E39B1ECDBBDA970518AF /* Pods_VOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C04DCC38249BEBCD532B195E /* Pods_VOne.framework */; };
+		F20F4A141DE53D44002F1DDF /* WelcomeBGM.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F20F4A131DE53D44002F1DDF /* WelcomeBGM.mp4 */; };
+		F20F4A161DE56B93002F1DDF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F4A151DE56B93002F1DDF /* LoginViewController.swift */; };
 		F2B4FCC81DE535EE007414C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FCB01DE535EE007414C3 /* AppDelegate.swift */; };
 		F2B4FCC91DE535EE007414C3 /* FSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FCB31DE535EE007414C3 /* FSBaseViewController.swift */; };
 		F2B4FCCA1DE535EE007414C3 /* FSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FCB41DE535EE007414C3 /* FSNavigationController.swift */; };
@@ -46,6 +48,8 @@
 		8666EB9437C2612836E9CE4D /* Pods_VOneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VOneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C04DCC38249BEBCD532B195E /* Pods_VOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3829AFA1B95FF97541E39DD /* Pods-VOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VOne/Pods-VOne.debug.xcconfig"; sourceTree = "<group>"; };
+		F20F4A131DE53D44002F1DDF /* WelcomeBGM.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WelcomeBGM.mp4; sourceTree = "<group>"; };
+		F20F4A151DE56B93002F1DDF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F2B4FCB01DE535EE007414C3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2B4FCB31DE535EE007414C3 /* FSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSBaseViewController.swift; sourceTree = "<group>"; };
 		F2B4FCB41DE535EE007414C3 /* FSNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSNavigationController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F20F4A121DE53D44002F1DDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F20F4A131DE53D44002F1DDF /* WelcomeBGM.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F2B4FCB11DE535EE007414C3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,9 +144,9 @@
 		F2B4FCB51DE535EE007414C3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F2B4FCBC1DE535EE007414C3 /* Main */,
 				F2B4FCB61DE535EE007414C3 /* Chat */,
 				F2B4FCB81DE535EE007414C3 /* Contact */,
-				F2B4FCBC1DE535EE007414C3 /* Main */,
 				F2B4FCC01DE535EE007414C3 /* Mine */,
 				F2B4FCC21DE535EE007414C3 /* Moments */,
 			);
@@ -179,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				F2B4FCBF1DE535EE007414C3 /* WelcomeViewController.swift */,
+				F20F4A151DE56B93002F1DDF /* LoginViewController.swift */,
 			);
 			path = LoginAndRegist;
 			sourceTree = "<group>";
@@ -241,6 +254,7 @@
 			children = (
 				F2B4FCB01DE535EE007414C3 /* AppDelegate.swift */,
 				F2B4FCB11DE535EE007414C3 /* Classes */,
+				F20F4A121DE53D44002F1DDF /* Resources */,
 				F2FD22D21D40B31C00EBDEF5 /* Assets.xcassets */,
 				F2C7D6281D3E36EE00E0EDBD /* Info.plist */,
 			);
@@ -365,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2FD22D31D40B31C00EBDEF5 /* Assets.xcassets in Resources */,
+				F20F4A141DE53D44002F1DDF /* WelcomeBGM.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +463,7 @@
 				F2B4FCC81DE535EE007414C3 /* AppDelegate.swift in Sources */,
 				F2B4FCCA1DE535EE007414C3 /* FSNavigationController.swift in Sources */,
 				F2B4FCCE1DE535EE007414C3 /* FSMainViewController.swift in Sources */,
+				F20F4A161DE56B93002F1DDF /* LoginViewController.swift in Sources */,
 				F2B4FCCC1DE535EE007414C3 /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

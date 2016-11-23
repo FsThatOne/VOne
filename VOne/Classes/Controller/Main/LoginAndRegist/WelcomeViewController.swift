@@ -55,6 +55,7 @@ class WelcomeViewController: UIViewController {
             }
         }
     }
+    
     var fillMode: ScalingMode = .resizeAspectFill {
         didSet {
             switch fillMode {
@@ -68,6 +69,12 @@ class WelcomeViewController: UIViewController {
         }
     }
 
+    convenience init(vFrame: CGRect, sTime: CGFloat) {
+        self.init()
+        videoFrame = vFrame
+        startTime = sTime
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         moviePlayer.view.frame = videoFrame
         moviePlayer.showsPlaybackControls = false
@@ -80,6 +87,24 @@ class WelcomeViewController: UIViewController {
         NotificationCenter.default.removeObserver(self)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+
+}
+
+// MARK: - 设置界面相关
+extension WelcomeViewController {
+    
+}
+
+
+// MARK: - 设置media播放相关
+extension WelcomeViewController {
     fileprivate func setMoviePlayer(_ url: URL){
         let videoCutter = VideoCutter()
         videoCutter.cropVideoWithUrl(videoUrl: url, startTime: startTime, duration: duration) { (videoPath, error) -> Void in
@@ -95,21 +120,10 @@ class WelcomeViewController: UIViewController {
         moviePlayer.player?.seek(to: kCMTimeZero)
         moviePlayer.player?.play()
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
 }
 
-extension String {
-    var NS: NSString { return (self as NSString) }
-}
 
+// MARK: - VideoCutter模型
 class VideoCutter: NSObject {
     func cropVideoWithUrl(videoUrl url: URL, startTime: CGFloat, duration: CGFloat, completion: ((_ videoPath: URL?, _ error: NSError?) -> Void)?) {
         DispatchQueue.global().async {
@@ -151,3 +165,8 @@ class VideoCutter: NSObject {
         }
     }
 }
+
+extension String {
+    var NS: NSString { return (self as NSString) }
+}
+

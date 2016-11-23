@@ -31,6 +31,11 @@ class FSBaseViewController: UIViewController {
     func loadData() {
         
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
 }
 
 extension FSBaseViewController {
