@@ -9,6 +9,7 @@
 import UIKit
 import MediaPlayer
 import AVKit
+import SnapKit
 
 public enum ScalingMode {
     case resize
@@ -16,7 +17,31 @@ public enum ScalingMode {
     case resizeAspectFill
 }
 
-class WelcomeViewController: UIViewController {
+class WelcomeViewController: FSBaseViewController {
+    
+    fileprivate var loginButton: UIButton = {
+        let btn = UIButton(type: .system)
+        btn.frame = CGRect.zero
+        btn.setTitleColor(UIColor.white, for: .normal)
+        btn.titleLabel?.font = UIFont(name: "Avenir Next", size: 22)
+        btn.setTitle("Login", for: .normal)
+        btn.setBackgroundImage(UIImage.imageWith(Color: UIColor(red:0.063, green:0.698, blue:0.137, alpha:1)), for: .normal)
+        btn.layer.cornerRadius = 5
+        btn.clipsToBounds = true
+        return btn
+    }()
+    
+    fileprivate var registButton: UIButton = {
+        let btn = UIButton(type: .system)
+        btn.frame = CGRect.zero
+        btn.setTitleColor(UIColor(red:0.063, green:0.698, blue:0.137, alpha:1), for: .normal)
+        btn.setTitle("Sign up", for: .normal)
+        btn.titleLabel?.font = UIFont(name: "Avenir Next", size: 22)
+        btn.setBackgroundImage(UIImage.imageWith(Color: UIColor.white), for: .normal)
+        btn.layer.cornerRadius = 5
+        btn.clipsToBounds = true
+        return btn
+    }()
     
     fileprivate let moviePlayer = AVPlayerViewController()
     fileprivate var moviePlayerSoundLevel: Float = 1.0
@@ -75,7 +100,8 @@ class WelcomeViewController: UIViewController {
         startTime = sTime
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         moviePlayer.view.frame = videoFrame
         moviePlayer.showsPlaybackControls = false
         view.addSubview(moviePlayer.view)
@@ -89,6 +115,7 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
     }
     
     override func didReceiveMemoryWarning() {
@@ -99,9 +126,38 @@ class WelcomeViewController: UIViewController {
 
 // MARK: - 设置界面相关
 extension WelcomeViewController {
-    
+    override internal func setupUI() {
+        view.addSubview(loginButton)
+        
+        loginButton.addTarget(self, action: #selector(login), for: .touchUpInside)
+        
+        view.addSubview(registButton)
+        
+        loginButton.snp.makeConstraints { (make) in
+            make.bottom.equalTo(view).offset(-40)
+            make.left.equalTo(view).offset(30)
+            make.right.equalTo(view).offset(-30)
+            make.height.equalTo(55)
+        }
+        
+        registButton.snp.makeConstraints { (make) in
+            make.bottom.equalTo(loginButton.snp.top).offset(-40)
+            make.left.equalTo(view).offset(30)
+            make.right.equalTo(view).offset(-30)
+            make.height.equalTo(loginButton)
+        }
+        
+    }
 }
 
+
+extension WelcomeViewController {
+    @objc fileprivate func login() {
+        let loginVC = LoginViewController()
+        loginVC.modalTransitionStyle = .crossDissolve
+        present(loginVC, animated: true, completion: nil)
+    }
+}
 
 // MARK: - 设置media播放相关
 extension WelcomeViewController {

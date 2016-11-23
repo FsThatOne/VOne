@@ -5,4 +5,5 @@ use_frameworks!
 target 'VOne' do
     pod 'Alamofire'
     pod 'RealmSwift'
+    pod 'SnapKit'
 end

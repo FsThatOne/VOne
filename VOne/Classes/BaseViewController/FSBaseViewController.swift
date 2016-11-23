@@ -8,6 +8,39 @@
 
 import UIKit
 
+public protocol shakable {
+    func shake()
+}
+
+extension shakable where Self: UIView {
+    func shake() {
+        let animation = CABasicAnimation(keyPath: "position")
+        animation.duration = 0.05
+        animation.repeatCount = 5
+        animation.autoreverses = true
+        animation.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x - 4.0,y: self.center.y))
+        animation.toValue = NSValue(cgPoint: CGPoint(x: self.center.x + 4.0,y: self.center.y))
+        layer.add(animation, forKey: "position")
+    }
+}
+
+public protocol twinkleable {
+    func twinkle()
+}
+
+extension twinkleable where Self: UIButton {
+    func twinkle() {
+        UIView.animate(withDuration: 0.25, animations: {
+            self.alpha = 0.5
+        }) { (Bool) in
+            UIView.animate(withDuration: 0.25, animations: {
+                self.alpha = 1.0
+            })
+        }
+    }
+}
+
+
 class FSBaseViewController: UIViewController {
     // tableView 可能有可能没有,因此是可选的
     var tableView: UITableView?
@@ -80,5 +113,19 @@ extension FSBaseViewController: UITableViewDelegate, UITableViewDataSource {
     // 同上
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
+    }
+}
+
+
+
+
+class fooView: UIView {
+    convenience init(title: String) {
+        self.init()
+        setupUI(title: title)
+    }
+    
+    func setupUI(title: String) {
+        
     }
 }

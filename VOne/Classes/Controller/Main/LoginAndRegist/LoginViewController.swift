@@ -39,20 +39,25 @@ class LoginViewController: FSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupUI()
     }
 
     override func setupUI() {
+        
+        let tapGuesture = UITapGestureRecognizer(target: self, action: #selector(endEditing))
+        view.addGestureRecognizer(tapGuesture)
+        view.backgroundColor = UIColor(red:0.063, green:0.698, blue:0.137, alpha:1)
+        
         //登陆框猫头鹰图
-        loginImg = UIImageView(frame: CGRect(x: mainSize.width / 2 - 211 / 2, y: 100, width: 211, height: 109))
+        loginImg = UIImageView(frame: CGRect(x: (mainSize.width - 211) / 2, y: 150, width: 211, height: 109))
         loginImg!.image = UIImage(named: "owl-login")
         loginImg!.layer.masksToBounds = true
         view.addSubview(loginImg!)
         
         //输入框容器视图
-        loginView = UIView(frame: CGRect(x: 15, y: 200, width: mainSize.width - 30, height: 160))
-        loginView!.layer.borderWidth = 1
-        loginView!.layer.borderColor = UIColor.black.cgColor
+        loginView = UIView(frame: CGRect(x: 15, y: 250, width: mainSize.width - 30, height: 160))
+        loginView!.layer.borderWidth = 0.5
+        loginView!.layer.borderColor = UIColor.gray.cgColor
         loginView!.backgroundColor = UIColor.white
         view.addSubview(loginView!)
         
@@ -120,6 +125,28 @@ class LoginViewController: FSBaseViewController {
 }
 
 extension LoginViewController: UITextFieldDelegate {
+    // 睁眼睛
+    func openEyes() {
+        UIView.animate(withDuration: 0.5, animations: { () -> Void in
+            self.leftHandGoneImg!.frame = CGRect(x: 61 - self.offsetLeftHand, y: 90, width: 40, height: 60)
+            self.rightHandGoneImg!.frame = CGRect(x: self.loginImg!.frame.size.width / 2 + 60, y: 90, width: 40, height: 60)
+            self.leftHandImg!.frame = CGRect(x: self.mainSize.width / 2 - 100, y: self.loginView!.frame.origin.y - 22, width: 40, height: 40)
+            self.rightHandImg!.frame = CGRect(x: self.mainSize.width / 2 + 62, y: self.loginView!.frame.origin.y - 22, width: 40, height: 40)
+        }, completion: { (Bool) -> Void in
+        })
+    }
+    // 蒙眼睛
+    func closeEyes() {
+        UIView.animate(withDuration: 0.5, animations: { () -> Void in
+            self.leftHandGoneImg!.frame = CGRect(x: self.leftHandGoneImg!.frame.origin.x + self.offsetLeftHand, y: self.leftHandGoneImg!.frame.origin.y - 30, width: self.leftHandGoneImg!.frame.size.width, height: self.leftHandGoneImg!.frame.size.height);
+            self.rightHandGoneImg!.frame = CGRect(x: self.rightHandGoneImg!.frame.origin.x - 48, y: self.rightHandGoneImg!.frame.origin.y - 30, width: self.rightHandGoneImg!.frame.size.width, height: self.rightHandGoneImg!.frame.size.height);
+            
+            self.leftHandImg!.frame = CGRect(x: self.leftHandImg!.frame.origin.x + 65 , y: self.loginView!.frame.origin.y, width: 0, height: 0)
+            self.rightHandImg!.frame = CGRect(x: self.rightHandImg!.frame.origin.x - 35, y: self.loginView!.frame.origin.y, width: 0, height: 0)
+        }, completion: { (Bool) -> Void in
+        })
+    }
+    // 开始输入
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == userName {
             if showType != .fsLoginTypeShow_Pass{
@@ -127,28 +154,24 @@ extension LoginViewController: UITextFieldDelegate {
                 return
             }
             showType = .fsLoginTypeShow_User
-            UIView.animate(withDuration: 0.5, animations: { () -> Void in
-                self.leftHandGoneImg!.frame = CGRect(x: 61 - self.offsetLeftHand, y: 90, width: 40, height: 60)
-                self.rightHandGoneImg!.frame = CGRect(x: self.loginImg!.frame.size.width / 2 + 60, y: 90, width: 40, height: 60)
-                self.leftHandImg!.frame = CGRect(x: self.mainSize.width / 2 - 100, y: self.loginView!.frame.origin.y - 22, width: 40, height: 40)
-                self.rightHandImg!.frame = CGRect(x: self.mainSize.width / 2 + 62, y: self.loginView!.frame.origin.y - 22, width: 40, height: 40)
-            }, completion: { (Bool) -> Void in
-            })
-            
-        }else if textField == passWord {
+            openEyes()
+        } else if textField == passWord {
             if showType != .fsLoginTypeShow_User{
                 showType = .fsLoginTypeShow_Pass
                 return
             }
             showType = .fsLoginTypeShow_Pass
-            UIView.animate(withDuration: 0.5, animations: { () -> Void in
-                self.leftHandGoneImg!.frame = CGRect(x: self.leftHandGoneImg!.frame.origin.x + self.offsetLeftHand, y: self.leftHandGoneImg!.frame.origin.y - 30, width: self.leftHandGoneImg!.frame.size.width, height: self.leftHandGoneImg!.frame.size.height);
-                self.rightHandGoneImg!.frame = CGRect(x: self.rightHandGoneImg!.frame.origin.x - 48, y: self.rightHandGoneImg!.frame.origin.y - 30, width: self.rightHandGoneImg!.frame.size.width, height: self.rightHandGoneImg!.frame.size.height);
-                
-                self.leftHandImg!.frame = CGRect(x: self.leftHandImg!.frame.origin.x + 65 , y: self.loginView!.frame.origin.y, width: 0, height: 0)
-                self.rightHandImg!.frame = CGRect(x: self.rightHandImg!.frame.origin.x - 35, y: self.loginView!.frame.origin.y, width: 0, height: 0)
-            }, completion: { (Bool) -> Void in
-            })
+            closeEyes()
         }
     }
+    // 结束输入
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        showType = .fsLoginTypeShow_User
+        openEyes()
+    }
+    // 强制结束输入状态
+    func endEditing() {
+        view.endEditing(true)
+    }
+    
 }

@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let url = URL(fileURLWithPath: Bundle.main.path(forResource: "WelcomeBGM", ofType: "mp4")!)
         let WelcomeVC = WelcomeViewController(vFrame: UIScreen.main.bounds, sTime: 2.0)
         WelcomeVC.contentURL = url
+        WelcomeVC.alwaysRepeat = true
         window!.rootViewController = WelcomeVC
         window!.makeKeyAndVisible()
         

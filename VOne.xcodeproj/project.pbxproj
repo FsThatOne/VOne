@@ -10,6 +10,7 @@
 		A643E39B1ECDBBDA970518AF /* Pods_VOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C04DCC38249BEBCD532B195E /* Pods_VOne.framework */; };
 		F20F4A141DE53D44002F1DDF /* WelcomeBGM.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F20F4A131DE53D44002F1DDF /* WelcomeBGM.mp4 */; };
 		F20F4A161DE56B93002F1DDF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F4A151DE56B93002F1DDF /* LoginViewController.swift */; };
+		F20F4A181DE56F42002F1DDF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F4A171DE56F42002F1DDF /* UIImage+Extension.swift */; };
 		F2B4FCC81DE535EE007414C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FCB01DE535EE007414C3 /* AppDelegate.swift */; };
 		F2B4FCC91DE535EE007414C3 /* FSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FCB31DE535EE007414C3 /* FSBaseViewController.swift */; };
 		F2B4FCCA1DE535EE007414C3 /* FSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FCB41DE535EE007414C3 /* FSNavigationController.swift */; };
@@ -50,6 +51,7 @@
 		D3829AFA1B95FF97541E39DD /* Pods-VOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VOne/Pods-VOne.debug.xcconfig"; sourceTree = "<group>"; };
 		F20F4A131DE53D44002F1DDF /* WelcomeBGM.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WelcomeBGM.mp4; sourceTree = "<group>"; };
 		F20F4A151DE56B93002F1DDF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F20F4A171DE56F42002F1DDF /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		F2B4FCB01DE535EE007414C3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2B4FCB31DE535EE007414C3 /* FSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSBaseViewController.swift; sourceTree = "<group>"; };
 		F2B4FCB41DE535EE007414C3 /* FSNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSNavigationController.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 		F2B4FCC41DE535EE007414C3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F20F4A171DE56F42002F1DDF /* UIImage+Extension.swift */,
 				F2B4FCC51DE535EE007414C3 /* Bundle+Extension.swift */,
 				F2B4FCC61DE535EE007414C3 /* UIBarButtonItem+Extension.swift */,
 				F2B4FCC71DE535EE007414C3 /* UIScreen+Extension.swift */,
@@ -453,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2B4FCC91DE535EE007414C3 /* FSBaseViewController.swift in Sources */,
+				F20F4A181DE56F42002F1DDF /* UIImage+Extension.swift in Sources */,
 				F2B4FCD11DE535EE007414C3 /* Bundle+Extension.swift in Sources */,
 				F2B4FCCF1DE535EE007414C3 /* WelcomeViewController.swift in Sources */,
 				F2B4FCD01DE535EE007414C3 /* MineViewController.swift in Sources */,
