@@ -4,7 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AVOSCloud.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AVOSCloudCrashReporting.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AVOSCloudIM.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FSLogger.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,12 +52,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0ACF832EDE2A01E3D24A1264D7161BBA</key>
+		<key>19568E85624D14E837AADAD6E7CC5299</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>52D1127E526E79DBF14E3210D038DD8C</key>
+		<key>256047EF3D50075412572FC5D87E723D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>623455B776CF8E8504935F1BBFEED352</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +72,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8E274B0991B4D1301B8F3A27036E3C74</key>
+		<key>7D1E484FA4E10DCC5BAA99E2058CA0EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F273DCF64AE8E9372A30438641E44952</key>
+		<key>B2AF7784D208AD07C3F9DCE3BA5B5584</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B507311863C2AF7635D1B0D3C2909AB3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCC02DA9AC15FDE5E62536C8CDE5F465</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F70EBCA659CC2CCF38313222C61F6B6B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
