@@ -39,7 +39,8 @@ class LoginViewController: FSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+//        setupUI()
+        test()
     }
 
     override func setupUI() {
@@ -172,6 +173,41 @@ extension LoginViewController: UITextFieldDelegate {
     // 强制结束输入状态
     func endEditing() {
         view.endEditing(true)
+    }
+    
+}
+
+extension LoginViewController {
+    
+    // test
+    func test() {
+        let group = DispatchGroup()
+        let queue = DispatchQueue(label: "兵法", attributes: DispatchQueue.Attributes.concurrent)
+        group.enter()
+        queue.async {
+            sleep(5)
+            print("0")
+            group.leave()
+        }
+        for i in 1...5 {
+            group.enter()
+            queue.async {
+                print("\(i)")
+                if i != 4 {
+//                    group.leave()
+                }
+            }
+        }
+//        group.notify(queue: queue) { 
+//            print("都完事了")
+//        }
+        let result = group.wait(timeout: DispatchTime.now() + 10)
+        if result == .success {
+            print("成功")
+        } else {
+            print("超时啦~")
+        }
+        print("超车啦!")
     }
     
 }
