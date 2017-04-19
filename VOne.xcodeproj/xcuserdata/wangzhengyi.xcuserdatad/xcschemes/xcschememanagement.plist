@@ -6,12 +6,19 @@
 	<dict>
 		<key>VOne.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>F25767441E1250DC00367B64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F2C7D6181D3E36EE00E0EDBD</key>
 		<dict>
 			<key>primary</key>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CallKit
 
 enum FsLoginTypeShow{
     case fsLoginTypeShow_User
@@ -39,10 +40,43 @@ class LoginViewController: FSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        setupUI()
-        test()
+        setupUI()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        regist()
+    }
+    
+    func regist() {
+        let manager: CXCallDirectoryManager = CXCallDirectoryManager.sharedInstance
+        manager.getEnabledStatusForExtension(withIdentifier: "FsThatOne.VOne") { (status, error) in
+            if error != nil {
+                var msgtitle: String? = nil
+                if status == .disabled {
+                    msgtitle = "未授权，请在设置->电话授权相关权限"
+                } else if status == .unknown {
+                    msgtitle = "尚不清楚"
+                } else {
+                    msgtitle = "已经授权"
+                }
+                let alert: UIAlertController = UIAlertController(title: "提示", message: msgtitle, preferredStyle: .alert)
+                let action: UIAlertAction = UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                    
+                })
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                let alert: UIAlertController = UIAlertController(title: "错误", message: "错误", preferredStyle: .alert)
+                let action: UIAlertAction = UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                    
+                })
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+    }
+    
     override func setupUI() {
         
         let tapGuesture = UITapGestureRecognizer(target: self, action: #selector(endEditing))
@@ -173,41 +207,6 @@ extension LoginViewController: UITextFieldDelegate {
     // 强制结束输入状态
     func endEditing() {
         view.endEditing(true)
-    }
-    
-}
-
-extension LoginViewController {
-    
-    // test
-    func test() {
-        let group = DispatchGroup()
-        let queue = DispatchQueue(label: "兵法", attributes: DispatchQueue.Attributes.concurrent)
-        group.enter()
-        queue.async {
-            sleep(5)
-            print("0")
-            group.leave()
-        }
-        for i in 1...5 {
-            group.enter()
-            queue.async {
-                print("\(i)")
-                if i != 4 {
-//                    group.leave()
-                }
-            }
-        }
-//        group.notify(queue: queue) { 
-//            print("都完事了")
-//        }
-        let result = group.wait(timeout: DispatchTime.now() + 10)
-        if result == .success {
-            print("成功")
-        } else {
-            print("超时啦~")
-        }
-        print("超车啦!")
     }
     
 }

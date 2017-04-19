@@ -43,6 +43,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F25767501E1250DD00367B64 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		63499B18DDB562BD95F324BD /* Pods-VOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-VOne/Pods-VOne.release.xcconfig"; sourceTree = "<group>"; };
 		83101343B85F0BB2D09ED320 /* Pods_VOneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VOneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,6 +290,7 @@
 				F2C7D6171D3E36EE00E0EDBD /* Resources */,
 				72EC94249E045BB9A0798E2C /* [CP] Embed Pods Frameworks */,
 				98EBA0DFB512EA8515EEA04D /* [CP] Copy Pods Resources */,
+				F25767501E1250DD00367B64 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -329,8 +343,8 @@
 		F2C7D6111D3E36EE00E0EDBD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0810;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = FsThatOne;
 				TargetAttributes = {
 					F2C7D6181D3E36EE00E0EDBD = {
@@ -597,12 +611,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3829AFA1B95FF97541E39DD /* Pods-VOne.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = VOne/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FsThatOne.VOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -616,12 +629,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 63499B18DDB562BD95F324BD /* Pods-VOne.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = VOne/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FsThatOne.VOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -633,7 +645,6 @@
 		F2C7D6451D3E36EF00E0EDBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = VOneTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -647,7 +658,6 @@
 		F2C7D6461D3E36EF00E0EDBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = VOneTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -661,7 +671,6 @@
 		F2C7D6481D3E36EF00E0EDBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = VOneUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FsThatOne.TestDemos.VOneUITests;
@@ -674,7 +683,6 @@
 		F2C7D6491D3E36EF00E0EDBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = VOneUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FsThatOne.TestDemos.VOneUITests;

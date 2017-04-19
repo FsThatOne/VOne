@@ -4,21 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AVOSCloud.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AVOSCloudCrashReporting.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AVOSCloudIM.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,7 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Moya.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-VOne.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PromiseKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -44,7 +39,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Result.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,47 +62,57 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>19568E85624D14E837AADAD6E7CC5299</key>
+		<key>2A6D0851BA24DD25864CB23A3A83B9CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>256047EF3D50075412572FC5D87E723D</key>
+		<key>3A470B9369139ACC4B122432224ECDB2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>623455B776CF8E8504935F1BBFEED352</key>
+		<key>3EDF2C483A8726DB7FE5E6D07E991992</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<key>7A033F8251E624F121C9E887CEC8BA1D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7D1E484FA4E10DCC5BAA99E2058CA0EA</key>
+		<key>7C096F0F42CBE6981DBCC74D38B4734F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B2AF7784D208AD07C3F9DCE3BA5B5584</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B507311863C2AF7635D1B0D3C2909AB3</key>
+		<key>9B520153CEB4CFF03C5C39DD8D5630BF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CCC02DA9AC15FDE5E62536C8CDE5F465</key>
+		<key>B0155D717A125F3841EFAC8B40462FC0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F70EBCA659CC2CCF38313222C61F6B6B</key>
+		<key>C419A9BCC9AACDC44A26B80764B6B554</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EFDB85DF4827734B35E8A46720ACAEE0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA2DC508151B5217BF3B747C59F59B9A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
